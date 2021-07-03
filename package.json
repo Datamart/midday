@@ -1,0 +1,31 @@
+{
+  "name": "meridiem",
+  "type": "module",
+  "version": "21.7.1",
+  "description": "Converts 24-hour time string to 12-hour time string.",
+  "homepage": "https://glize.js.org",
+  "repository": "github:Datamart/meridiem",
+  "license": "Apache-2.0",
+  "main": "./index.js",
+  "exports": "./index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "test": "node ./index.tests.js"
+  },
+  "bugs": {
+    "url": "https://github.com/Datamart/meridiem/issues"
+  },
+  "author": {
+    "name": "Valentin Podkamennyi",
+    "email": "valentin@dtm.io",
+    "url": "https://vpodk.com/"
+  },
+  "keywords": [
+    "meridiem",
+    "meridiem-time",
+    "ante-meridiem",
+    "post-meridiem",
+    "time", "am-time", "pm-time", "ampm",
+    "glize"
+  ]
+}
