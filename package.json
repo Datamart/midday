@@ -1,10 +1,10 @@
 {
-  "name": "m-time",
+  "name": "midday",
   "type": "module",
   "version": "21.7.1",
   "description": "Converts 24-hour time string to 12-hour time string.",
   "homepage": "https://glize.js.org",
-  "repository": "github:Datamart/m-time",
+  "repository": "github:Datamart/midday",
   "license": "Apache-2.0",
   "main": "./index.js",
   "exports": "./index.js",
@@ -13,7 +13,7 @@
     "test": "node ./index.tests.js"
   },
   "bugs": {
-    "url": "https://github.com/Datamart/m-time/issues"
+    "url": "https://github.com/Datamart/midday/issues"
   },
   "author": {
     "name": "Valentin Podkamennyi",
@@ -25,7 +25,12 @@
     "meridiem-time",
     "ante-meridiem",
     "post-meridiem",
-    "time", "am-time", "pm-time", "ampm",
+    "time",
+    "am-time",
+    "pm-time",
+    "ampm",
+    "midday",
+    "midday-time",
     "glize"
   ]
 }

@@ -1,16 +1,16 @@
 # Meridiem time [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Meridiem%20time%20module%20from%20Glize%20library.&url=https://glize.js.org&via=GitHub&hashtags=Glize,JavaScript,ECMAScript,ES6)
-[![Build Status](https://github.com/Datamart/m-time/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/Datamart/m-time/actions/workflows/npm-publish.yml) [![License](https://img.shields.io/:license-apache-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.html) [![NPM version](https://img.shields.io/npm/v/m-time.svg?style=flat)](https://npmjs.org/package/m-time) [![Website](https://img.shields.io/website-up-down-green-red/https/glize.js.org.svg?style=flat)](https://glize.js.org) [![NPM downloads](https://img.shields.io/npm/dm/m-time.svg?style=flat)](https://npmjs.org/package/m-time)
+[![Build Status](https://github.com/Datamart/midday/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/Datamart/midday/actions/workflows/npm-publish.yml) [![License](https://img.shields.io/:license-apache-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.html) [![NPM version](https://img.shields.io/npm/v/midday.svg?style=flat)](https://npmjs.org/package/midday) [![Website](https://img.shields.io/website-up-down-green-red/https/glize.js.org.svg?style=flat)](https://glize.js.org) [![NPM downloads](https://img.shields.io/npm/dm/midday.svg?style=flat)](https://npmjs.org/package/midday)
 
 Converts 24-hour time string to 12-hour time string.
 
 ## Usage
 
 ```bash
-npm install m-time --save
+npm install midday --save
 ```
 
 ```js
-import { convert as toMeridiem } from 'm-time';
+import { convert as toMeridiem } from 'midday';
 
 /**
  * Converts 24-hour time string to 12-hour time string.
