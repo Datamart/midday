@@ -1,5 +1,5 @@
 import * as assert from "assert";
-import { convert } from "meridiem";
+import { convert } from "m-time";
 
 const runTests = () => {
   assert.strictEqual(convert("00:30"), "12:30 AM");

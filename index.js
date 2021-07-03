@@ -3,8 +3,8 @@
  *
  * @see https://google.github.io/styleguide/javascriptguide.xml
  * @see https://developers.google.com/closure/compiler/docs/js-for-compiler
- * @see https://github.com/Datamart/meridiem
- * @module meridiem
+ * @see https://github.com/Datamart/m-time
+ * @module m-time
  */
 
 
