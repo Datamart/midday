@@ -24,15 +24,15 @@
  * toMeridiem('12:15'); // 12:15 PM
  * toMeridiem('13:15'); // 1:15 PM
  * toMeridiem('23:15'); // 11:15 PM
- * toMeridiem('0030'); // 12:30 AM
- * toMeridiem('2315'); // 11:15 PM
+ * toMeridiem('0030');  // 12:30 AM
+ * toMeridiem('2315');  // 11:15 PM
  */
 export const toMeridiem = (time) => {
-  const re = /^([012][0123])\D?([012345]\d)$/;
+  const re = /^(([01]\d)|(2[0123]))\D?([012345]\d)$/;
   if (re.test(time)) {
     const parts = time.split(re);
     const hours = parts[1];
-    const mins = parts[2];
+    const mins = parts[4];
     return (hours % 12 || 12) + ':' + mins + ' ' + (12 > hours ? 'AM' : 'PM');
   }
 
@@ -48,18 +48,18 @@ export const toMeridiem = (time) => {
  * @method
  * @example
  * toMilitary('12:30 AM'); // 00:30
- * toMilitary('1:15 AM'); // 01:15
+ * toMilitary('1:15 AM');  // 01:15
  * toMilitary('11:45 AM'); // 11:45
  * toMilitary('12:15 PM'); // 12:15
- * toMilitary('1:15 PM'); // 13:15
+ * toMilitary('1:15 PM');  // 13:15
  * toMilitary('11:15 PM'); // 23:15
  */
 export const toMilitary = (time) => {
-  const re = /^([01]?\d):([012345]\d)\s?(a|p)m$/i;
+  const re = /^(([01][012])|(\d)):([012345]\d)\s?(a|p)m$/i;
   if (re.test(time)) {
     const parts = time.toLowerCase().split(re);
-    const hours = (+parts[1] % 12) + ('p' == parts[3] ? 12 : 0);
-    return ('0' + hours).slice(-2) + ':' + parts[2];
+    const hours = (+parts[1] % 12) + ('p' == parts[5] ? 12 : 0);
+    return ('0' + hours).slice(-2) + ':' + parts[4];
   }
 
   throw new Error('Invalid time input: ' + time);
