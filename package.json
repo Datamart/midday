@@ -1,7 +1,7 @@
 {
   "name": "midday",
   "type": "module",
-  "version": "21.7.5",
+  "version": "21.7.6",
   "description": "Converts 24-hour (military) time string to 12-hour (meridiem) time string and vice versa.",
   "homepage": "https://glize.js.org",
   "repository": "github:Datamart/midday",
