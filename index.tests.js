@@ -28,6 +28,11 @@ const testMeridiem = () => {
     "Should throw an error if the time string is invalid."
   );
   assert.throws(
+    () => toMeridiem("29:00"),
+    Error,
+    "Should throw an error if the time string is invalid."
+  );
+  assert.throws(
     () => toMeridiem("10:95"),
     Error,
     "Should throw an error if the time string is invalid."
@@ -51,12 +56,17 @@ const testMilitary = () => {
   assert.strictEqual(toMilitary("11:59 PM"), "23:59");
 
   assert.throws(
-    () => convert("41:15 PM"),
+    () => toMilitary("14:15 PM"),
     Error,
     "Should throw an error if the time string is invalid."
   );
   assert.throws(
-    () => convert("1:99 PM"),
+    () => toMilitary("41:15 PM"),
+    Error,
+    "Should throw an error if the time string is invalid."
+  );
+  assert.throws(
+    () => toMilitary("1:99 PM"),
     Error,
     "Should throw an error if the time string is invalid."
   );
