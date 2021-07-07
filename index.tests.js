@@ -21,6 +21,8 @@ const testMeridiem = () => {
   assert.strictEqual(toMeridiem("0030"), "12:30 AM");
   assert.strictEqual(toMeridiem("1315"), "1:15 PM");
   assert.strictEqual(toMeridiem("2315"), "11:15 PM");
+  assert.strictEqual(toMeridiem("030"),  "12:30 AM");
+  assert.strictEqual(toMeridiem("730"),  "7:30 AM");
 
   assert.throws(
     () => toMeridiem("24:00"),
