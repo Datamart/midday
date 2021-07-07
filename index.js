@@ -26,9 +26,10 @@
  * toMeridiem('23:15'); // 11:15 PM
  * toMeridiem('0030');  // 12:30 AM
  * toMeridiem('2315');  // 11:15 PM
+ * toMeridiem('715');   // 7:15 PM
  */
 export const toMeridiem = (time) => {
-  const re = /^(([01]\d)|(2[0123]))\D?([012345]\d)$/;
+  const re = /^(([01]?\d)|(2[0123]))\D?([012345]\d)$/;
   if (re.test(time)) {
     const parts = time.split(re);
     const hours = parts[1];
